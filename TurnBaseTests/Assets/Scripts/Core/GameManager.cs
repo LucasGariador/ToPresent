@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    [SerializeField] GameObject drawDeck;
+    [SerializeField] GameObject discardDeck;
     public int MaxDeckCards
     { get; private set; }
 

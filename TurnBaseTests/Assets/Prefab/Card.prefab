@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f793b74b79da3f149805ecda0baf7df1, type: 2}
+  m_sharedMaterial: {fileID: -9141837015369738621, guid: f793b74b79da3f149805ecda0baf7df1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -880,6 +880,8 @@ GameObject:
   - component: {fileID: 8009106359833510310}
   - component: {fileID: 8009106359833510309}
   - component: {fileID: 8009106359833510311}
+  - component: {fileID: -6933019003479386785}
+  - component: {fileID: -913886029874949615}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -972,3 +974,45 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7e2ba0f0527585746b3d5180f7c291f4, type: 3}
   - {fileID: 21300000, guid: 48d125c114cce924bbc643715dbaf7cd, type: 3}
   - {fileID: 21300000, guid: 2368dce22e9851a419820ac5a64db3ae, type: 3}
+--- !u!114 &-6933019003479386785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8009106359833510307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a356a2eeaaa2847a8caf965c8672a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+--- !u!114 &-913886029874949615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8009106359833510307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -6933019003479386785}
+          m_TargetAssemblyTypeName: CardInteraction, Assembly-CSharp
+          m_MethodName: DragHandler
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
